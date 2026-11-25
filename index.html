@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather & Movie Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#">☀️ Explore<span>Hub</span></a><nav><a href="#weather">Weather</a><a href="#movies">Movies</a></nav></header>
+  <main>
+    <section class="hero"><p class="eyebrow">MINOR PROJECT 03</p><h1>Explore the world.<br><span>One search at a time.</span></h1><p>Discover live weather and find your next favourite movie.</p></section>
+    <section id="weather" class="panel weather-panel">
+      <div class="section-heading"><div><p class="eyebrow">LIVE CONDITIONS</p><h2>Weather Finder</h2></div><span class="icon">🌤️</span></div>
+      <form id="weather-form" class="search-form"><input id="city-input" placeholder="Enter a city (e.g. Visakhapatnam)" required><button>Search weather</button></form>
+      <div id="weather-result" class="result" aria-live="polite"><p class="muted">Search for a city to see its weather.</p></div>
+    </section>
+    <section id="movies" class="panel movie-panel">
+      <div class="section-heading"><div><p class="eyebrow">MOVIE DATABASE</p><h2>Movie Search</h2></div><span class="icon">🎬</span></div>
+      <form id="movie-form" class="search-form"><input id="movie-input" placeholder="Search movies (e.g. Interstellar)" required><button>Find movies</button></form>
+      <div id="movie-result" class="movie-grid" aria-live="polite"><p class="muted">Search to explore movies.</p></div>
+    </section>
+  </main>
+  <footer>Minor Project 03 · HTML · CSS · JavaScript ES6+</footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
